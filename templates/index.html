@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <img src="{{ url_for('static', filename='./img.jpg') }}" align="middle" height=205 width=290>
+    <h1>Welcome to Just Green Vegeterians Order Online!</h1>
+    <h1>Links:</h1>
+    <a href="{{ url_for('index') }}"><button>Home</button></a>
+    <a href="{{ url_for('register') }}"><button>Ordering form</button></a>
+    <a href="{{ url_for('menu') }}"><button>Menu</button></a>
+    <h1>Items to order</h1>
+    <h2>Sorry for no mobile view</h2>
+    <p1>Things to take note:</p1>
+    <p2> • Type in your registration  nunber before what you order (your registration number that you were given over email/phone) </p3>
+    <p3> • If you haven't registered, click the button below to register </p2>
+    <div></div>
+    <div>
+        <h2>
+           Thank you!
+        </h2>
+    </div>
+    <div></div>
+    <h3></h3>
+    <h1></h1>
+    <h2></h2>
+        <form action="/" method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" text="Add Task">
+        </form>
+    <h1></h1>
+    <h2>
+
+    </h2>
+    <div>
+    </div>
+    <div>
+    </div>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Time Added</th>
+            <th>Actions</th>
+        </tr>
+        {% for task in tasks %}
+        <tr>
+            <td>{{ task.content }}</td>
+            <td>{{ task.date_created.date() }}</td>
+            <td>
+                <a href="/delete/{{ task.id }}"><button>Delete</button></a>
+                <a href="/update/{{ task.id }}"><button>Change item to order</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

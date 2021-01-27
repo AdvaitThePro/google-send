@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Menu{% endblock %}
+{% block body %}
+<img src="{{ url_for('static', filename='./img.jpg') }}" align="middle" height=205 width=290>
+<h1>Welcome to Just Green Vegeterians Order Online!</h1>
+<h1>Links:</h1>
+<a href="{{ url_for('index') }}"><button>Home</button></a>
+<a href="{{ url_for('register') }}"><button>Register</button></a>
+<a href="{{ url_for('menu') }}"><button>Menu</button></a>
+<h1></h1>
+<h1>Base</h1>
+<p>Rice = $1</p>
+
+<p>Mee Hoon = $1.20</p>
+
+<p>Mee Siam = $1.50</p>
+
+<h1>Veggies and Meat</h1>
+<h2>$0.20 per veggie</h2>
+<p>Meat</p>
+<p>Pork</p>
+
+<p>Beef</p>
+
+<p>Chicken</p>
+
+<p>Steamed Dumplings (Guaizi) (CNY SPECIAL)
+
+<p>Sweet Rice Balls (Tangyun (CNY SPECIAL)</p>
+
+<h1>Sides</h1>
+<p>Fried Kailan</p>
+
+<p>Raw Onion</p>
+
+<p>Curry 🍛 </p>
+
+<p>Chicken curry</p>
+
+{% endblock %}

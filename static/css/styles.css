@@ -1,0 +1,64 @@
+@font-face{
+    font-family: trial;
+    src: url('PTSans.woff');
+}
+body, html {
+    margin: 0;
+    text-align: center;
+    font-family: trial;
+
+}
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+table, td, th {
+    border: 2px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+#content {
+     width: 70%;
+}
+button {
+    text-size-adjust: 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid #af4c4c;
+    padding: 14px 40px;
+    transition-duration: 0.4s;
+    font-family: trial; 
+    align-self: center;
+}
+input[type=button] {
+    text-size-adjust: 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid #af4c4c;
+    padding: 14px 25px;
+    transition-duration: 0.4s;
+    font-family: trial;    
+}
+button:hover {
+    background-color: #af4c4c; /* Green */
+    color: rgb(255, 255, 255);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
