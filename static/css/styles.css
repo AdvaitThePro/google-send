@@ -5,7 +5,7 @@
 body, html {
     margin: 0;
     text-align: center;
-    font-family: trial;
+    font-family: trial, Arial;
 
 }
 .content {
@@ -45,7 +45,7 @@ button {
     border: 2px solid #af4c4c;
     padding: 14px 40px;
     transition-duration: 0.4s;
-    font-family: trial; 
+    font-family: trial, Arial; 
     align-self: center;
 }
 input[type=button] {
