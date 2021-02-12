@@ -77,6 +77,6 @@ def update(id):
 def register():
     return render_template("register.html")
 
-
+# Random line to make sure thing doesn't go to sleep
 if __name__ == "__main__":
     app.run(port=int("5000"), debug=True)
